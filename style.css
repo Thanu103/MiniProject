@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, #2a2a72, #009ffd);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+.container{
+    margin:auto;
+    background-color: rgb(7, 32, 103);
+    color: white;
+    display: flex;
+    width: 550px;
+    height: 480px;
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 9px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.guest , .home{
+    margin: 20px 20px;
+}
+#home--btn, #guest--btn{
+    width: 100px;
+    height: 90px;
+    margin: 15px;
+    background-color: black;
+    color: rgb(255, 53, 90);
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 7px;
+}
+.operate{
+    width: 178px;
+    height: 55px;
+    margin-right: 10px;
+    padding-left: 7px;
+    /* border: 1px solid white; */
+}
+.operate > button{
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+    background-color: transparent;
+    border: 2px solid rgb(219, 219, 219);
+    font-size: 18px;
+    color: rgb(219, 219, 219);
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+
+    
+}
+.operate > button:active{
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+
+.container-two{
+    margin:33px auto;
+    background-color: rgb(161, 208, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 180px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+#Timer{
+    background-color: rgb(161, 208, 255);
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    border: 3px solid;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.save--btn{
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 7px;
+    border-radius: 3px;
+    position: sticky;
+    top: 0;
+   
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(4, 16, 109);
+    border: none;
+}
+.save--btn:active{
+    background-color: rgb(70, 80, 200);
+}
+
+.restart--btn{
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 7px;
+    border-radius: 3px;
+    position: sticky;
+    top: 0;
+   
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(4, 16, 109);
+    border: none;
+}
+.restart--btn:active{
+    background-color: rgb(70, 80, 200);
+}
+
+
+.container-two >p{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+
+/* Styles for the Foul and Timeout buttons */
+
+.foul-timeout-btn {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.foul-timeout-btn:hover {
+    background-color: rgba(300, 255, 255, 1);
+}
+
+/* Styling the Foul and Timeout buttons */
+
+#homeFoulBtn, #guestFoulBtn {
+    background-color: #d32f2f; /* Red color for fouls */
+}
+
+#homeTimeoutBtn, #guestTimeoutBtn {
+    background-color: #1976d2; /* Blue color for timeouts */
+}
+
+/* Adding more visual distinction for the Foul button */
+
+#homeFoulBtn, #guestFoulBtn {
+    border-color: #b71c1c;
+    width: 50px;
+}
+
+/* Adding more visual distinction for the Timeout button */
+
+#homeTimeoutBtn, #guestTimeoutBtn {
+    border-color: #1565c0;
+    width: 85px;
+}
+
+
+
+

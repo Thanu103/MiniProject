@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="background">
+        <h1>BASKETBALL SCOREBOARD</h1>
+        <div class="container">
+            <div class="home">
+                <h1>HOME</h1>
+                <button id="home--btn">0</button>
+                <div class="operate">
+                    <button id="btn--one" onclick="plusOne()">+1</button>
+                    <button id="btn--two" onclick="plusTwo()">+2</button>
+                    <button id="btn--three" onclick="plusThree()">+3</button>
+                    <button id="btn--neg-one" onclick="minusOne()">-1</button>
+                    <button id="btn--neg-two" onclick="minusTwo()">-2</button>
+                    <button id="btn--neg-three" onclick="minusThree()">-3</button><br>
+                    <button id="homeFoulBtn" onclick="homeFoulClick()">Foul</button>
+                    <button id="homeTimeoutBtn" onclick="homeTimeout()">Timeout</button>
+                </div>
+            </div>
+            <div class="guest">
+                <h1>GUEST</h1>
+                <button id="guest--btn">0</button>
+                <div class="operate">
+                    <button id="btn--one" onclick="guestPlusOne()">+1</button>
+                    <button id="btn--two" onclick="guestPlusTwo()">+2</button>
+                    <button id="btn--three" onclick="guestPlusThree()">+3</button>
+                    <button id="btn--neg-one" onclick="guestMinusOne()">-1</button>
+                    <button id="btn--neg-two" onclick="guestMinusTwo()">-2</button>
+                    <button id="btn--neg-three" onclick="guestMinusThree()">-3</button>
+                    <button id="guestFoulBtn" onclick="guestFoulClick()">Foul</button>
+                    <button id="guestTimeoutBtn" onclick="guestTimeout()">Timeout</button>
+                </div>
+            </div>
+        </div>
+        <p id="Timer">Timer: <span id="timeDisplay">00:00:00</span></p>
+        <div class="container-two">
+            <button class="save--btn" onclick="saveClick()">SAVE</button><br>
+             <p id="home--count" onclick="homeCount">Home Count : </p>
+            <p id="guest--count" onclick="guestCount">Guest Count : </p>
+            
+            <button class="restart--btn" onclick="restartGame()">RESTART</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
